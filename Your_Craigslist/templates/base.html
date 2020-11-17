@@ -1,0 +1,56 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Your Craigslist</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <link rel="stylesheet" href= "{% static 'css/style.css' %}">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+</head>
+<body>
+    <nav>
+        <div class="container nav-wrapper">
+            <a href="/" class="brand-logo">Your Craigslist</a>
+            <ul id="nav-mobile" class="right">
+                <li><a href="/">Home</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <h2 style="text-align: center;">What do you want to search on Your Craigslist?</h2>
+
+    <div class="container">
+        <div class="row">
+            <div class="col s4">
+                <div class="center">
+                    <i class="medium material-icons" style="color: #EE6E73">flash_on</i>
+                    <p>Fast craigslist web scraper</p>
+                    <p class="light center">Scrape away right here with a beautiful GUI.</p>
+                </div>
+            </div>
+    
+            <div class="col s4">
+                <div class="center">
+                    <i class="medium material-icons" style="color: orange">camera</i>
+                    <p>filter your searches</p>
+                    <p class="light center">We built in a functionality to filter according to pricing.</p>
+                </div>
+            </div>
+    
+            <div class="col s4">
+                <div class="center">
+                    <i class="medium material-icons" style="color: blue">chrome_reader_mode</i>
+                    <p>An attractive front-end of Craigslist</p>
+                    <p class="light center">We built this with ❤️</p>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>    
+</body>
+</html>
