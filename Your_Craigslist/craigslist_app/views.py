@@ -5,4 +5,4 @@ def home(request):
     return render(request, template_name='base.html')
 
 def new_search(request):
-    pass
+    return render(request, 'craigslist_app/new_search.html')

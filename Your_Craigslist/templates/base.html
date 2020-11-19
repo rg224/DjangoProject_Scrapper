@@ -48,7 +48,21 @@
                 </div>
             </div>
         </div>
+
+        <form action="{% url 'new_search' %}" method="post">
+            {% csrf_token %}
+            <input type="text" name="search" placeholder="Search">
+            <!-- <input type="text" name="min_price" placeholder="min_price">
+            <input type="text" name="max_price" placeholder="max_price"> -->
+            <button class="btn waves-effect waves-light red" type="submit" name="action">Submit
+                <i class="material-icons right">send</i>
+            </button>
+        </form>
+
+        {% block content %}
         
+        {% endblock content %}
+
     </div>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>    
