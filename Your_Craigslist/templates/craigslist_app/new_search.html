@@ -1,5 +1,76 @@
 {% extends "base.html" %}
 
 {% block content %}
-    <h2>Tesing search page</h2>
+    {% if search %}
+    <h2 style="text-align: center;">{{ search | title }}</h2>
+    {% else %}
+    <h2>No search took place</h2>
+    {% endif %}
+
+    <div class="row">
+        <div class="col s4">
+            <div class="card">
+                <div class="card-image" style="height: 250px; overflow: hidden;">
+                    <a href="#"><img src="https://hips.hearstapps.com/countryliving.cdnds.net/17/47/1511194376-cavachon-puppy-christmas.jpg" alt=""></a>
+                </div>
+
+                <div class="card-content">
+                    <p>Title of Card</p>
+                </div>
+
+                <div class="card-action">
+                    <a href="#">Link</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col s4">
+            <div class="card">
+                <div class="card-image" style="height: 250px; overflow: hidden;">
+                    <a href="#"><img src="https://hips.hearstapps.com/countryliving.cdnds.net/17/47/1511194376-cavachon-puppy-christmas.jpg" alt=""></a>
+                </div>
+
+                <div class="card-content">
+                    <p>Title of Card</p>
+                </div>
+
+                <div class="card-action">
+                    <a href="#">Link</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col s4">
+            <div class="card">
+                <div class="card-image" style="height: 250px; overflow: hidden;">
+                    <a href="#"><img src="https://hips.hearstapps.com/countryliving.cdnds.net/17/47/1511194376-cavachon-puppy-christmas.jpg" alt=""></a>
+                </div>
+
+                <div class="card-content">
+                    <p>Title of Card</p>
+                </div>
+
+                <div class="card-action">
+                    <a href="#">Link</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col s4">
+            <div class="card">
+                <div class="card-image" style="height: 250px; overflow: hidden;">
+                    <a href="#"><img src="https://hips.hearstapps.com/countryliving.cdnds.net/17/47/1511194376-cavachon-puppy-christmas.jpg" alt=""></a>
+                </div>
+
+                <div class="card-content">
+                    <p>Title of Card</p>
+                </div>
+
+                <div class="card-action">
+                    <a href="#">Link</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
 {% endblock content %}
